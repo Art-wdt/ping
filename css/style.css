@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    background-color: hsl(223, 87%, 63%);
+    background-color: hsl(223, 100%, 88%);
+    background-color: hsl(354, 100%, 66%);
+    background-color: hsl(0, 0%, 59%);
+    background-color: hsl(209, 33%, 12%);
+    background-color: #fff;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+
+}
+
+.header__logo {
+    display: block;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+}
+
+.main h1 {
+    font-weight: 300;
+    color: hsl(0, 0%, 59%);
+}
+
+.main h1 span {
+    font-weight: 700;
+    color: hsl(209, 33%, 12%);
+}
+
+.heroImage {
+    max-width: 100%;
+}
+
+.email {
+    border: 1px solid hsl(223, 87%, 63%);
+    width: 90%;
+    padding: 20px;
+    border-radius: 30px;
+    margin-top: 20px;
+    color: hsl(223, 87%, 63%);
+    font-size: 16px;
+}
+
+.form__error-message {
+    
+    font-size: 0.9rem;
+    margin-top: 5px;
+    font-style: italic;
+    color: #ff5263;
+    visibility: hidden;
+    height: 0;
+}
+
+.email.has-error {
+    border: 1px solid #ff5263;
+}
+
+.form__error-message.active {
+    visibility: visible;
+    height: auto;
+}
+
+.visually-hidden {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: none;
+}
+
+.button {
+    background-color: hsl(223, 87%, 63%);
+    width: 90%;
+    padding: 20px;
+    border: 0;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    color: #fff;
+    font-size: 18px;
+    box-shadow: 0px 7px 10px 4px rgba(39, 161, 255, 0.14);
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: hsl(223, 72%, 69%);
+}
+
+.footer {
+    margin-top: 200px;
+}
+
+.social__icons {
+    box-sizing: content-box;
+    width: 20px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid hsl(223, 87%, 63%);
+    border-radius: 50%;
+    font-size: 20px;
+    text-decoration: none;
+    color: hsl(223, 87%, 63%);
+    margin: 20px;
+}
+
+
+.social__icons:hover {
+    background-color: hsl(223, 87%, 63%);
+    color: #fff;
+}
+
+.footer__credits {
+    margin-top: 50px;
+    color: hsl(0, 0%, 59%);
+}
+
+@media only screen and (min-width: 768px) {
+    .header__logo {
+        padding-top: 80px;
+    }
+
+    .email {
+        /* display: inline; */
+        
+    }
+
+    .input__container {
+        width: 420px;
+    }
+
+    .button {
+        /* display: inline; */
+        max-width: 200px;
+        margin-left: 15px;
+    }
+
+    .heroImage {
+        max-width: 700px;
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+    }
+}
